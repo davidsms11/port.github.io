@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="menu-bars" class="fas fa-bars "></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div id="particles-js"></div>
+
+        <div class="content">
+            <img class="tilt" src="./img/Herbst 2019 (21).JPG">
+            <h3>David <span>Silva</span></h3>
+            <p>I am a <span class="typing-text"></span></p>
+            <a href="#about" class="btn">About me </a>
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+        <h1 class="heading">about <span>me</span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img class="tilt" src="./img/Herbst 2019 (21).JPG">
+            </div>
+            <div class="content">
+                <h3>my name is <span>David silva</span></h3>
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime atque adipisci fuga,
+                    sapiente sequi praesentium dolorem error voluptate itaque magni iste, tenetur quos eaque
+                    repudiandae. A dolorum quod similique.</p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>Language:</span> Portuguese / German / English / Spanish </p>
+                        <p><span>Email: </span> davidsms2018@gmail.com</p>
+                        <p><span>Adress: </span> Germany - NRW</p>
+                    </div>
+                </div>
+                <a href="cv/my_cv.rar" download="my_cv.rar" type="application/rar" class="btn">download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"><span>my </span> portfolio</h1>
+
+        <div class="box-container">
+
+            <div class="box tilt">
+                <img class="tilt" src="https://picsum.photos/200/300?random=2">
+                <div class="content">
+                    <a href="" class="btn">lern more</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img class="tilt" src="https://picsum.photos/200/300?random=1">
+                <div class="content">
+                    <a href="" class="btn">lern more</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img src="https://picsum.photos/200/300?random=3">
+                <div class="content">
+                    <a href="" class="btn">lern more</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img class="tilt" src="https://picsum.photos/200/300?random=4">
+                <div class="content">
+                    <a href="" class="btn">lern more</a>
+                </div>
+            </div>
+ 
+            <section class="contact" id="contact">
+                <h1 class="heading"> contact <span> me </span></h1>
+                <div class="row">
+                    <div class="image">
+                        <img src="./img/contact-img.svg" alt="">
+                    </div>
+
+                    <form action="">
+                        <div class="inputbox">
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email">
+                        </div>
+
+                        <input type="text" placeholder="subject" class="box">
+
+                        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                        
+                        <input type="submit" class="btn" value="send message ">
+                    </form>
+                </div>
+            </section>
+
+        </div>
+        </div>
+    </section>
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header = document.querySelector('header')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+
+        var typed = new Typed('.typing-text', {
+            strings: ['Front End Developer ', 'Web Developer'],
+            loop: true,
+            typeSpeed: 120
+        });
+
+        VanillaTilt.init(document.querySelector(".tilt"), {
+            max: 25,
+            speed: 150
+        });
+    </script>
+</body>
+
+</html>
