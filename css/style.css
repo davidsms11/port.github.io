@@ -1,5 +1,9 @@
 :root {
   --green: #27ae60;
+  --primary-color: #fff;
+  --second-color:#222;
+  --bg-color:#eee;
+  --txt-color:#333;
 }
 
 * {
@@ -23,15 +27,20 @@ html::-webkit-scrollbar {
   width: 0.7rem;
 }
 html::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 html::-webkit-scrollbar-thumb {
   background-color: var(--green);
 }
 
 body {
-  background: #eee;
+  background: var(--bg-color);
   padding-right: 5rem;
+  color: var(--second-color);
+}
+.dark-mode   {
+  background: rgb(97, 92, 92);
+  color: var(--primary-color);
 }
 
 section {
@@ -43,7 +52,7 @@ section {
   padding-bottom: 2rem;
   font-size: 6rem;
   text-transform: uppercase;
-  color: #222;
+  color: var(--second-color);
 }
 .heading span {
   text-transform: uppercase;
@@ -54,8 +63,8 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 3rem;
-  background: #222;
-  color: #fff;
+  background: var(--second-color);
+color: var(--primary-color);
   font-size: 1.7rem;
   cursor: pointer;
   border-radius: 20px;
@@ -73,7 +82,7 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: var(--primary-color);
   z-index: 1000;
 }
 
@@ -85,7 +94,7 @@ header .navbar {
 header .navbar a {
   padding: 1.5rem;
   font-size: 2rem;
-  color: #222;
+  color: var(--second-color);
 }
 
 header .navbar a:hover {
@@ -98,7 +107,7 @@ header .navbar a:hover {
   top: 1rem;
   left: 1rem;
   padding: 1rem 1.5rem;
-  color: #fff;
+  color: var(--primary-color);
   background: var(--green);
   cursor: pointer;
   border-radius: 0.5rem;
@@ -131,7 +140,7 @@ header .navbar a:hover {
   position: relative;
   z-index: 1;
 }
-.home .content img {
+.home .content img {  
   height: 25rem;
   width: 25rem;
   border-radius: 50%;
@@ -141,7 +150,7 @@ header .navbar a:hover {
 
 .home .content h3 {
   font-size: 4rem;
-  color: #222;
+  color: var(--second-color);
   text-transform: uppercase;
 }
 .home .content h3 span {
@@ -150,7 +159,7 @@ header .navbar a:hover {
 }
 
 .home .content p {
-  color: #222;
+  color: var(--second-color);
   font-size: 2.5rem;
   line-height: 2;
 }
@@ -169,7 +178,7 @@ header .navbar a:hover {
 .about .row .image img {
   width: 30rem;
   border-radius: 0.5rem;
-  border: 1rem solid #fff;
+  border: 1rem solid var(--primary-color);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -178,14 +187,14 @@ header .navbar a:hover {
 }
 
 .about .row .content h3 {
-  color: #2222;
+  color: var(--second-color);
   font-size: 4rem;
 }
 .about .row .content h3 span {
   color: var(--green);
 }
 .about .row .content .info {
-  color: #333;
+  color: var(--txt-color);
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 2;
@@ -216,7 +225,7 @@ header .navbar a:hover {
 .portfolio .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
-  border: 1rem solid #fff;
+  border: 1rem solid var(--primary-color);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -261,7 +270,7 @@ header .navbar a:hover {
   padding: 1rem 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  background: #fff;
+  background: var(--primary-color);
 }
 .contact .row form .inputbox {
   display: flex;
@@ -275,7 +284,7 @@ header .navbar a:hover {
   width: 100%;
   border-radius: 0.5rem;
   font-size: 1.7rem;
-  color: #333;
+  color: var(--txt-color);
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 1rem 0;
@@ -293,6 +302,12 @@ header .navbar a:hover {
 .contact .row form textarea {
   height: 20rem;
   resize: none;
+}
+
+#dark{
+  cursor: pointer;
+  font-size: 2rem;
+  color: #3f4642;
 }
 
 
