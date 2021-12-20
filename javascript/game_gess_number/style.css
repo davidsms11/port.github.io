@@ -118,3 +118,12 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+.back {
+  position: relative;
+  left: 300px;
+  top: 20px;
+}
+.back a {
+  text-decoration: none;
+  color: #222;
+}
