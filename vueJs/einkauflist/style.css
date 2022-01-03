@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Jost', sans-serif;
+}
+
+header{
+    margin: 3rem;
+    background-color:#1b995e ;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#list{
+    margin: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#list h2{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    border-bottom: #1b995e solid 4px;
+}
+
+#list ul{
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#list li{
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #8ddba4;
+    padding: 0.5rem;
+    color: #1f1f1f;
+    border-radius: 25px;
+}
+
+#list input{
+    font: inherit;
+    border: 1px solid #ccc;
+}
+
+#list button{
+    font: inherit;
+    cursor: pointer;
+    
+}
